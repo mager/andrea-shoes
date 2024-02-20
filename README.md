@@ -1,30 +1,23 @@
-# Example app with styletron
+# Andrea Shoes
 
-This example features how yo use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styletron](https://github.com/rtsao/styletron).
+## Installation
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`.
+Clone repo:
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styletron)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styletron&project-name=with-styletron&repository-name=with-styletron)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-styletron with-styletron-app
+```
+git clone git@github.com:mager/andrea-shoes.git
 ```
 
-```bash
-yarn create next-app --example with-styletron with-styletron-app
+Install dependencies:
+
+```
+NPM_CONFIG_REGISTRY=https://registry.npmjs.com/ npm install
 ```
 
-```bash
-pnpm create next-app --example with-styletron with-styletron-app
+Run:
+
+```
+NPM_CONFIG_REGISTRY=https://registry.npmjs.com/ npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-# andrea-shoes
+Open http://localhost:3000

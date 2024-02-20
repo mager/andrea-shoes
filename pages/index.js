@@ -1,5 +1,4 @@
-// DOCUMENTATION: http://styletron.org
-
+import Link from "next/link";
 import { styled, useStyletron } from "styletron-react";
 
 // statically styled component
@@ -14,14 +13,15 @@ const SubTitle = styled("h2", ({ $size }) => ({
   fontSize: `${$size}px`,
 }));
 
-export default function Home() {
-  // an alternative hook based API
+const Home = () => {
   const [css] = useStyletron();
   return (
     <div>
-      <Title>Title</Title>
-      <SubTitle $size={50}>Subtitle</SubTitle>
-      <p className={css({ fontSize: "32px" })}>Styled by hook</p>
+      <Title>Shoes by Andrea</Title>
+      <SubTitle $size={50}>This site has a lot of different types of shoes</SubTitle>
+      <Link href="/shoes">Check out all my shoes</Link>
     </div>
   );
 }
+
+export default Home;
